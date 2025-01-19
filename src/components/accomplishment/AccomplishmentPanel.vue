@@ -14,9 +14,9 @@
         </div>
       </div>
     </div> -->
-    <div class="row justify-content-center">
-      <div class="col-6 mt-2" v-for="(item, index) in data" :key="index">
-        <div class="card mx-auto" style="max-width: 500px; height: 400px;">
+    <div class="row justify-content-evenly">
+      <div class="col-12 col-sm-6 mt-2" v-for="(item, index) in data" :key="index">
+        <div class="card mx-auto my-3" style="max-width: 500px; height: 400px;">
           <!-- <img src="..." class="card-img-top" alt="..."> -->
           <v-img class="card-img-top" :src="item.images[0]" alt="Example Image" aspect-ratio="16/9"
             :lazy-src="item.images[0]" max-width="800px" />
