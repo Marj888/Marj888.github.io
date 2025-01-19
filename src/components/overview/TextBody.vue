@@ -2,8 +2,8 @@
   <div class="mt-4">
     <p class="h1 m-0 cl-sandy-brown">{{ header }}</p>
     <hr class="hr" />
-    <div class="cl-dark-blue" v-for="(item, i) in data" :key="i">
-      <p>{{ item }}</p>
+    <div class="text-message-container cl-dark-blue mx-auto">
+      <p class="" v-for="(item, i) in data" :key="i">{{ item }}</p>
     </div>
   </div>
 </template>
@@ -26,4 +26,8 @@ applications mostly based in ASP.NET and Vue.js framework.`])
 
 </script>
 
-<style scoped></style>
+<style scoped>
+  .text-message-container {
+    max-width: 600px;
+  }
+</style>

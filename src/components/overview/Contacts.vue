@@ -1,14 +1,18 @@
 <template>
   <div class="mt-4">
-    <p class="h1 m-0 cl-sandy-brown">{{ header }}</p>
+    <p class="h1 m-0 cl-sandy-brown text-start">{{ header }}</p>
     <hr class="hr" />
-    <div class="contact-info__item mt-3 cl-dark-blue" v-for="(item, i) in data" :key="i">
-      <div class="contact-info__icon">
-        <v-icon size="40">{{ item.icon }}</v-icon>
-      </div>
-      <div class="text-start ms-3">
-        <p class="fw-bold m-0">{{ item.title }}</p>
-        <a :href="item.href" :target="item.target">{{ item.value }}</a>
+    <div class="row">
+      <div class="col-12" v-for="(item, i) in data" :key="i">
+        <div class="contact-info__item mt-3 cl-dark-blue">
+          <div class="contact-info__icon">
+            <v-icon size="40">{{ item.icon }}</v-icon>
+          </div>
+          <div class="text-start ms-3">
+            <p class="fw-bold m-0">{{ item.title }}</p>
+            <a :href="item.href" :target="item.target">{{ item.value }}</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -75,6 +79,7 @@ const data = reactive([
 .contact-info__item {
   display: flex;
   align-items: flex-end;
+  width: 300px;
 }
 
 .contact-info__content {

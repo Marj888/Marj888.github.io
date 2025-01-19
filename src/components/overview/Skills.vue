@@ -1,16 +1,20 @@
 <template>
   <div class="mt-4">
-    <p class="h1 m-0 cl-sandy-brown">{{ header }}</p>
-    <hr class="hr"/>
-    <div class="personal-info__item mt-3 cl-dark-blue" v-for="(item, i) in data" :key="i">
-      <div class="">
-        <v-icon size="40">
-          <img :src="item.icon" alt="Custom Icon" />
-        </v-icon>
-      </div>
-      <div class="text-start ms-3">
-        <p class="fw-bold m-0">{{ item.title }}</p>
-        <p class="m-0 cl-ocean-blue">{{ item.experience }} year experience</p>
+    <p class="h1 m-0 text-center cl-sandy-brown">{{ header }}</p>
+    <hr class="hr" />
+    <div class="row justify-content-md-center">
+      <div class="col-auto" v-for="(item, i) in data" :key="i">
+        <div class="skill-item mt-3 cl-dark-blue ">
+          <div class="">
+            <v-icon size="40">
+              <img :src="item.icon" alt="Custom Icon" />
+            </v-icon>
+          </div>
+          <div class="text-start ms-3">
+            <p class="fw-bold m-0">{{ item.title }}</p>
+            <p class="m-0 cl-ocean-blue">{{ item.experience }} year experience</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -87,12 +91,13 @@ const data = reactive([
 </script>
 
 <style scoped>
-.personal-info__item {
+.skill-item {
   display: flex;
   align-items: flex-end;
+  width: 220px;
 }
 
-.personal-info__content {
+.skill-item-content {
   display: flex;
   flex-direction: column;
   margin-left: 10px;

@@ -1,0 +1,5 @@
+HOW TO PUSH CHANGES TO gh-pages subtree
+
+git add dist -f (ADD dist FOLDER FORCEFULLY )
+git commit -m "CHANGES MADE" (COMMIT CHANGES)
+git subtree push --prefix dist origin gh-pages (PUSH CHANGES TO gh-pages)
