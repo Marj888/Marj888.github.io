@@ -5,13 +5,13 @@
       <div class="col-12">
         <TextBody :header="'Summary'" />
       </div>
-      <div class="col-xs-12 col-sm-5">
+      <div class="col-12 col-md-5">
         <Contacts :header="'Contacts'" />
       </div>
-      <div class="col-1 mx-1 px-0 pt-5">
-        <div class="vr h-75 mt-5 mx-auto d-none d-sm-block"></div>
+      <div class="col-1 mx-1 px-0 pt-5 d-none d-md-block">
+        <div class="vr h-75 mt-5 mx-auto"></div>
       </div>
-      <div class="col-xs-12 col-sm-5">
+      <div class="col-12 col-md-5">
         <PersonalInfo :header="'Personal Info'" />
       </div>
       <div class="col-12">

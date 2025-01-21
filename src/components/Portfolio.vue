@@ -25,7 +25,7 @@
           <TimelinePanel v-show="timelinePanelVisiblity" />
         </div>
       </div>
-
+      
     </div>
     <v-footer class="bg-dark-blue">
       <v-row justify="center" no-gutters>

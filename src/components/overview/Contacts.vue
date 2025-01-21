@@ -1,6 +1,6 @@
 <template>
   <div class="mt-4">
-    <p class="h1 m-0 cl-sandy-brown text-start">{{ header }}</p>
+    <p class="h1 m-0 cl-sandy-brown">{{ header }}</p>
     <hr class="hr" />
     <div class="row">
       <div class="col-12" v-for="(item, i) in data" :key="i">
